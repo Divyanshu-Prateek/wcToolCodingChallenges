@@ -1,7 +1,7 @@
 {
     "author": {
         "name": "prateek divyanshu",
-        "email": "prateek.off.10023@gmail.com"
+        "email": "prateek10023@gmail.com"
     },
     "type": "module",
     "pkg": {
@@ -14,10 +14,12 @@
         "@babel/core": "^7.26.0",
         "@babel/preset-env": "^7.26.0"
     },
-    "name": "my-app",
+    "name": "wcDupe",
     "version": "1.0.0",
     "scripts": {
         "build": "echo 'Babel transpile' && npx babel src --out-dir dist",
-        "package": "echo 'Babel transpile AND Generate new app.exe' && npm run build && pkg dist/main.js --output app.exe"
+        "package": "echo 'Babel transpile AND Generate new app.exe' && npm run build && pkg dist/main.js --output app.exe",
+        "runTranspiledVersion": "node dist/main.js",
+        "run": "node src/main.js"
     }
 }
